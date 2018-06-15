@@ -1,4 +1,4 @@
-# Chrome Extension + React
+# Chrome Extension (Wepback + Babel + React)
 
 This template uses Wepback, Babel, and React to build the necessary components of a basic Chrome extension.
 
