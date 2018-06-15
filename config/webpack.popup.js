@@ -6,6 +6,7 @@ var BUILD_DIR = path.resolve(__dirname, '..', 'build');
 module.exports = {
     name: "popup",
     entry: path.resolve(APP_DIR, 'popup.jsx'),
+    devtool: 'cheap-module-source-map',
     module: {
         rules: [{ test: /\.jsx?/,use: "babel-loader" }],
     },

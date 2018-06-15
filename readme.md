@@ -26,3 +26,9 @@ In the `build` directory you'll find a `manifest.json` which should be edited to
 ### Build
 
 For development purposes use `npm run dev`, for production `npm run build`.
+
+NOTE: Because of Chrome's "Content Security Policy (CSP)", Webpack's source maps cause errors.
+If you need source maps, add the following to your extension's manifest:
+`"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"`
+and run `webpack -d --watch`
+It is highly recommended that you remove this for your production build.

@@ -1,9 +1,8 @@
 {
-    "key": "<YOUR_KEY_HERE>",
     "name": "Chrome Extension",
     "description": "Send photos, links, and text from your browser to your phone.",
     "version": "1.0",
-    "manifest_version": 1,
+    "manifest_version": 2,
     "permissions": ["activeTab", "http://*/"],
     "options_page": "options.html",
     "background": {

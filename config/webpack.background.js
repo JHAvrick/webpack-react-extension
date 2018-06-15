@@ -5,14 +5,12 @@ var BUILD_DIR = path.resolve(__dirname, '..', 'build');
 
 module.exports = {
     name: "background_script",
-    
     entry: path.resolve(APP_DIR, 'background.js'),
-    
+    devtool: 'cheap-module-source-map', 
     output: {
             path: BUILD_DIR,
             filename: 'background.js',
     },
-
     resolve: {
         alias: {
             //components: path.resolve(__dirname, 'app/components/base'),
